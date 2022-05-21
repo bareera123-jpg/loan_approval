@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Loan Form</title>
+    </head>
+
+
+    <body>
+
+        <form action="/data" method="post"> 
+            <input type="text" name="Form_created_Date" placeholder="Date" onfocus="(this.type='date')"required="required" />
+            <input type="text" name="Comapany_Name" placeholder="Company Name" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')" />
+            <input type="number" name="CIN Number" placeholder="CIN Number" required="required"  /> 
+            <input type="text" name="Date of Incorporation" placeholder="Date of Incorporation" onfocus="(this.type='date')"required="required" />
+            <input type="text" name="Date of Commencement of Operation" placeholder="Date of Commencement of Operation" onfocus="(this.type='date')"required="required" />
+            <input type="text" name="Legal Form of Company" placeholder="Legal Form of Company" required="required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')" />
+            <input type="text" name="Age of Business" placeholder="Is your Business 3 yrs old?" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Financial or Non_Financial" placeholder="Financial or Non_Financial" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Sector of Operation" placeholder="Sector of Operation" required = "required" minlength = '6' maxlength = "37" />
+            <input type="text" name="Business Model" placeholder="Business Model" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Type of Company(Client Type)" placeholder="Type of Company(Client Type)" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Brief description of company" placeholder="Brief description of company" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Directors_Name" placeholder="Directors Name" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Directors_BOD" placeholder="Date of Birth" onfocus="(this.type='date')"required = "required"/>
+            <input type="text" name="Directors_DOJ" placeholder="Date of Joining"onfocus="(this.type='date')" required = "required"/>
+            <input type="text" name="Nominated" placeholder="Nominated" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="number" name="Directors_Directorship" placeholder="No. of Directorships Besides Current Company" required = "required"/>
+            <input type="text" name="Personnel_Name" placeholder="Personnel Name" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Director Also" placeholder="Is Also a Director" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Position" placeholder="Position" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Personnel_BOD" placeholder="Date of Birth" onfocus="(this.type='date')"required = "required"/>
+            <input type="text" name="Personnel_DOJ" placeholder="Date of Joining" onfocus="(this.type='date')"required = "required"/>
+            <input type="number" name="Turnover or AUM" placeholder="Turnover" required = "required"/>
+            <input type="text" name="External Funds Raised- VC/ Pvt Equity/ Angel Inv" placeholder="External Funds Raised" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="number" name="Total Funds raised so far" placeholder="Total Funds raised so far" required = "required" />
+            <input type="text" name="Latest Round of fund raising(date)" placeholder="Latest Date of Funds Raised(date)"onfocus="(this.type='date')" required = "required"/>
+            <input type="number" name="Latest Round of fund raising(amount)" placeholder="Latest Amount of Funds Raised(amount)" required = "required"/>
+            <input type="text" name="Latest Round of fund raising(Type of investor)" placeholder="Type of Investor VC/ Pvt Equity / Angel Inv" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Outstanding Debt" placeholder="Outstanding Debt" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="number" name="Total Outstanding Debt" placeholder="Total Outstanding Debt" required = "required" />
+            <input type="number" name="Latest Outstanding Debt Raised(value)" placeholder="Latest Outstanding Debt Raised(value)" required = "required" />
+            <input type="text" name="Latest Outstanding Debt Raised(date)" placeholder="Latest Outstanding Debt Raised(date)"onfocus="(this.type='date')" required = "required"/>
+            <input type="text" name="Optional Convertible Debt" placeholder="Optional Convertible Debt" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="number" name=" Total Optional Convertible Debt" placeholder="Total Optional Convertible Debt" required = "required" />
+            <input type="number" name="Latest Optional Convertible Debt(value)" placeholder="Latest Optional Convertible Debt(value)" required = "required" />
+            <input type="text" name="Latest Optional Convertible Debt(date)" placeholder="Latest Optional Convertible Debt(date)" onfocus="(this.type='date')"required = "required"/>
+            <input type="text" name="Legal Cases" placeholder="Legal Cases" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Rating agency name" placeholder="Rating Agency Name" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Rating Date" placeholder="Rating Date" onfocus="(this.type='date')"required = "required"/>
+            <input type="text" name="Rating Received" placeholder="Rating Received" required = "required" />
+            <input type="text" name="Social/Sustainability Certification" placeholder="Social/Sustainability Certification" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="text" name="Internal Audit" placeholder="Internal Audit" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+            <input type="number" name="Employee Payroll Year Before" placeholder="Employee Payroll Year Before" required = "required"/>
+            <input type="number" name="Employee Payroll Current" placeholder="Employee Payroll Current" required = "required"/>
+            <input type="number" name="Women Employee Current" placeholder="Women Employee Current" required = "required"/>
+            <input type="number" name="Loan Amount" placeholder="Loan Amount" required = "required"/>
+            <input type="text" name="Purpose of Loan" placeholder="Purpose of Loan" required = "required" oninput="this.value = this.value.replace(/[^a-zA-Z\s]/, '')"/>
+
+
+            
+            
+            
+            <button type='submit'>Press Enter to Predict</button>
+        
+        </form>
+
+
+
+        
+    </body>
+</html>
